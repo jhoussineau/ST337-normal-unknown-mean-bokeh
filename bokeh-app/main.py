@@ -44,7 +44,7 @@ y = normal_pdf(x, mu, sigma_default**2)
 N2 = ColumnDataSource(data=dict(x=x, y=y))
 
 # Function regenerating the observations
-max_n_obs = 10
+max_n_obs = 50
 obs_root = np.random.randn(max_n_obs)
 
 y_obs = np.array((0,0.2))
