@@ -125,6 +125,6 @@ n_obs.on_change('value', update)
 # Set up layouts and add to document
 inputs = widgetbox(button, mu_0, sigma_0, sigma, n_obs)
 
-curdoc().add_root(row(inputs, plot, width=800))
+curdoc().add_root(row(plot, inputs)) #, width=800))
 curdoc().title = "Normal likelihood: unknown mean"
 
